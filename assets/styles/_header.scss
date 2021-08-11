@@ -1,0 +1,41 @@
+header.header {
+    background:#f9f9f9;
+}
+
+
+div#navbarSupportedContent {
+    padding:20px 0;
+}
+
+ul#menu-primary-menu {
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    margin:0;
+    padding:0;
+
+    li {
+        margin-bottom:20px;
+
+        a {
+            color:#f9f9f9;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        &.current_page_item {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+
+
+    @media screen and (min-width:992px) {
+        flex-direction: row;
+
+        li {
+            margin-bottom:0;
+            margin-left:15px;
+        }
+    }
+}

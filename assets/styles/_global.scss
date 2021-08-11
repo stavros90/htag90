@@ -1,0 +1,26 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: rgb(107, 19, 19);
+}
+
+main {
+    background:#dfdfdf;
+    padding-top:30px;
+    padding-bottom:30px;
+    min-height:calc(100vh - 97px);
+}
+
+.content {
+    background:#ffffff;
+    padding:30px;
+}
+
+.content-blog {
+    padding:0;
+}

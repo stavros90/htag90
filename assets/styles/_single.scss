@@ -1,0 +1,73 @@
+article.single-article {
+    h1 {
+        font-size:22px;
+    }
+
+    .date {
+        margin-bottom:20px;
+        display:block;
+    }
+
+    a {
+        color:var(--primary-color);
+    }
+
+    blockquote {
+        padding-left:10px;
+        display:flex;
+        letter-spacing: 1px;
+
+        &:before {
+            display:inline-block;
+            content:'\201C';
+            font-size:2rem;
+            margin-right:10px;
+        }
+    }
+
+    pre[data-lang]::before { 
+        content: attr(data-lang); 
+        display: block; 
+        background:#333;
+        color:white;
+        width:100%;
+        text-align: right;
+        margin-right:4px;
+        tab-size: 4;
+
+    }
+
+    @media screen and (min-width:992px) {
+        h1 {
+            font-size:26px;
+            line-height: 1.4;
+        }
+    }
+}
+
+.post-tags {
+    padding:30px;
+    background:#ffffff;
+
+    .tag-list {
+        list-style-type:none;
+        display:flex;
+        margin:0;
+        padding:0;
+    
+        li {
+            margin-right:10px;
+
+            a {
+                font-weight: 500;
+                color:var(--primary-color);
+            }
+        }
+    }
+    
+}
+
+.author_name {
+    padding-top:15px;
+    border-top:2px solid #333;
+}
